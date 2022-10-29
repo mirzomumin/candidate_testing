@@ -11,7 +11,7 @@ from user.serializers.confirm_email import ConfirmationCodeSerializer
 from user.models import CustomUser
 
 
-@swagger_auto_schema(method='get', request_body=ConfirmationCodeSerializer)
+@swagger_auto_schema(method='get', query_serializer=ConfirmationCodeSerializer)
 @api_view(['GET'])
 def confirm(request):
 	'''Confirm signed up user email'''
