@@ -166,6 +166,8 @@ SIMPLE_JWT = {
 
 AUTH_USER_MODEL = 'user.CustomUser'
 
+BACKEND_DOMAIN = 'http://81.169.219.21/'
+
 
 # SMTP Configurations
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
